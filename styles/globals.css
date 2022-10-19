@@ -1,26 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  background-color: green;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+@font-face {
+  font-family: "Cascadia";
+  src: url("../public/fonts/Cascadia.ttf");
 }
+
+/* font styles 
+Montserrat - 400,500,800;
+Cascadia;
+*/
