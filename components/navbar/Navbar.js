@@ -8,10 +8,18 @@ const Bar = styled.div`
   padding: 1em 1.2em;
 `;
 
-const Logo = styled.h1`
+const Logo = styled.p`
   font-family: "Cascadia";
+  font-size: 40px;
+  cursor: pointer;
   span {
     color: #7ac943;
+  }
+  &:hover {
+    color: #7ac943;
+    span {
+      color: #fff;
+    }
   }
 `;
 
@@ -22,7 +30,7 @@ const Menu = styled.ul`
 
 const Item = styled.li`
   font-size: 23px;
-  margin-right: 3em;
+  margin-right: 2em;
   cursor: pointer;
   &:hover {
     color: #7ac943;
@@ -32,11 +40,13 @@ const Item = styled.li`
 export default function Navbar() {
   return (
     <Bar>
-      <Logo>
-        <span>{"{"}</span>
-        {"AllisonDev"}
-        <span>{"/}"}</span>
-      </Logo>
+      <Link href={"/"}>
+        <Logo>
+          <span>{"{"}</span>
+          {"AllisonDev"}
+          <span>{"/}"}</span>
+        </Logo>
+      </Link>
       <Menu>
         <Link href={"/projetos"}>
           <Item>Projetos</Item>
@@ -44,14 +54,6 @@ export default function Navbar() {
 
         <Link href={"/habilidades"}>
           <Item>Habilidades</Item>
-        </Link>
-
-        <Link href={"/sobre"}>
-          <Item>Sobre</Item>
-        </Link>
-
-        <Link href={"/contatos"}>
-          <Item>Contatos</Item>
         </Link>
       </Menu>
     </Bar>

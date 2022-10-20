@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background-color: #001405;
   color: #fff;
   font-family: Montserrat;
   font-weight: 400;
@@ -21,3 +20,7 @@
 Montserrat - 400,500,800;
 Cascadia;
 */
+
+body {
+  background-color: #001405;
+}
