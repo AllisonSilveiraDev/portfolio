@@ -8,12 +8,17 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 70px 100px 0 100px;
-`;
 
-const Info = styled.div`
-  width: 50%;
-  margin-right: 80px;
+  .image {
+    display: block;
+    width: 350px;
+    height: 350px;
+  }
 
+  .info {
+    width: 50%;
+    margin-right: 80px;
+  }
   h2 {
     margin-bottom: 20px;
     font-size: 30 px;
@@ -27,12 +32,39 @@ const Info = styled.div`
   p {
     font-size: 16px;
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    display: flex;
+    flex-direction: column-reverse;
+    height: max-content;
+    text-align: center;
+    margin: 0 1rem;
+
+    .image {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+    .info {
+      width: 80%;
+      margin: 15px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 `;
 
 export default function Conteudo() {
   return (
     <Container>
-      <Info>
+      <div className="info">
         <h2>
           Olá, eu sou <span>Allison Silveira</span>
         </h2>
@@ -47,9 +79,16 @@ export default function Conteudo() {
           melhor a cada dia.
         </p>
         <Btn />
-      </Info>
-
-      <Image src="/images/redondog.png" width="400" height="400" alt="img" />
+      </div>
+      <div className="image">
+        <Image
+          src="/images/redondog.png"
+          width="400"
+          height="400"
+          alt="img"
+          layout="responsive"
+        />
+      </div>
     </Container>
   );
 }

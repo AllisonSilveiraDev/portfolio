@@ -1,61 +1,71 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-const Bar = styled.div`
+const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 1.2em;
-`;
 
-const Logo = styled.p`
-  font-family: "Cascadia";
-  font-size: 40px;
-  cursor: pointer;
-  span {
-    color: #7ac943;
-  }
-  &:hover {
-    color: #7ac943;
+  h1 {
+    font-family: "Cascadia";
+    font-size: 40px;
+    cursor: pointer;
     span {
-      color: #fff;
+      color: #7ac943;
+    }
+    &:hover {
+      color: #7ac943;
+      span {
+        color: #fff;
+      }
     }
   }
-`;
 
-const Menu = styled.ul`
-  display: flex;
-  list-style: none;
-`;
+  ul {
+    display: flex;
+    list-style: none;
+  }
 
-const Item = styled.li`
-  font-size: 23px;
-  margin-right: 2em;
-  cursor: pointer;
-  &:hover {
-    color: #7ac943;
+  li {
+    font-size: 23px;
+    margin-right: 2em;
+    cursor: pointer;
+    &:hover {
+      color: #7ac943;
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    h1 {
+      font-size: 16px;
+    }
+
+    li {
+      font-size: 12px;
+    }
   }
 `;
 
 export default function Navbar() {
   return (
-    <Bar>
+    <Nav>
       <Link href={"/"}>
-        <Logo>
+        <h1>
           <span>{"{"}</span>
           {"AllisonDev"}
           <span>{"/}"}</span>
-        </Logo>
+        </h1>
       </Link>
-      <Menu>
+      <ul>
         <Link href={"/projetos"}>
-          <Item>Projetos</Item>
+          <li>Projetos</li>
         </Link>
 
         <Link href={"/habilidades"}>
-          <Item>Habilidades</Item>
+          <li>Habilidades</li>
         </Link>
-      </Menu>
-    </Bar>
+      </ul>
+    </Nav>
   );
 }
