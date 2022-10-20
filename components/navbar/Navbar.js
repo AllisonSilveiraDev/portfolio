@@ -21,8 +21,12 @@ const Menu = styled.ul`
 `;
 
 const Item = styled.li`
+  font-size: 23px;
   margin-right: 3em;
   cursor: pointer;
+  &:hover {
+    color: #7ac943;
+  }
 `;
 
 export default function Navbar() {
