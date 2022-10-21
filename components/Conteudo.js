@@ -87,6 +87,7 @@ export default function Conteudo() {
           height="400"
           alt="img"
           layout="responsive"
+          priority
         />
       </div>
     </Container>

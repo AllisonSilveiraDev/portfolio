@@ -36,7 +36,7 @@ const Nav = styled.div`
     }
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media screen and (min-width: 280px) and (max-width: 950px) {
     h1 {
       font-size: 16px;
     }
