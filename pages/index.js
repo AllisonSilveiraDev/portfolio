@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Conteudo from "../components/Conteudo";
-import Navbar from "../components/navbar/Navbar";
+import HomeConteiner from "../components/HomeConteiner";
+import Navbar from "../components/Navbar";
 import Social from "../components/Social";
 import Background from "../components/Background";
 
@@ -12,7 +12,7 @@ export default function Home() {
         <title>{"{AllisonDev/}"}</title>
       </Head>
       <Navbar />
-      <Conteudo />
+      <HomeConteiner />
       <Social />
     </div>
   );

@@ -1,7 +1,6 @@
-import Link from "next/link";
 import styled from "styled-components";
 
-const Nav = styled.div`
+export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,26 +45,3 @@ const Nav = styled.div`
     }
   }
 `;
-
-export default function Navbar() {
-  return (
-    <Nav>
-      <Link href={"/"}>
-        <h1>
-          <span>{"{"}</span>
-          {"AllisonDev"}
-          <span>{"/}"}</span>
-        </h1>
-      </Link>
-      <ul>
-        <Link href={"/projetos"}>
-          <li>Projetos</li>
-        </Link>
-
-        <Link href={"/habilidades"}>
-          <li>Habilidades</li>
-        </Link>
-      </ul>
-    </Nav>
-  );
-}
