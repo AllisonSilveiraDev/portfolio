@@ -10,7 +10,7 @@ export const ProStyle = styled.div`
     font-weight: 800;
     color: #7ac943;
 
-    @media screen and (min-width: 280px) and (max-width: 1080px) {
+    @media (max-width: 1080px) {
       font-size: 25px;
     }
   }

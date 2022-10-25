@@ -32,7 +32,7 @@ export const ContainerIcons = styled.div`
     text-decoration: line-through;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media (max-width: 1080px) {
     margin: 20px;
 
     .icon {

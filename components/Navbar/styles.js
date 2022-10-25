@@ -1,15 +1,96 @@
 import styled from "styled-components";
 
-export const Nav = styled.div`
+export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 1.2em;
+`;
 
+export const NavLinks = styled.nav`
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    background-color: #004637;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    z-index: 5;
+
+    gap: 0px;
+    top: 0px;
+    right: 0px;
+
+    right: ${(props) => (props.sidebar ? "0" : "-100%")};
+    transition: 0.5s;
+
+    a {
+      margin-top: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 30px;
+    }
+  }
+`;
+
+export const Ancora = styled.a`
+  font-size: 25px;
+  transition: 0.3s;
+  &:hover {
+    color: #7ac943;
+  }
+
+  @media (min-width: 800px) {
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+  }
+`;
+
+export const Menu = styled.div`
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: flex;
+    path {
+      &:hover {
+        color: #7ac943;
+        transition: 0.5s;
+      }
+    }
+  }
+`;
+
+export const CloseSidebar = styled.div`
+  font-size: 35px;
+  right: 15px;
+  top: 35px;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: flex;
+    path {
+      &:hover {
+        color: #7ac943;
+        transition: 0.5s;
+      }
+    }
+  }
+`;
+
+export const ContentTitle = styled.div`
   h1 {
     font-family: "Cascadia";
-    font-size: 40px;
-    cursor: pointer;
+    font-size: 30px;
     span {
       color: #7ac943;
     }
@@ -18,30 +99,6 @@ export const Nav = styled.div`
       span {
         color: #fff;
       }
-    }
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-  }
-
-  li {
-    font-size: 23px;
-    margin-right: 2em;
-    cursor: pointer;
-    &:hover {
-      color: #7ac943;
-    }
-  }
-
-  @media screen and (min-width: 280px) and (max-width: 950px) {
-    h1 {
-      font-size: 16px;
-    }
-
-    li {
-      font-size: 12px;
     }
   }
 `;

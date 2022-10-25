@@ -11,6 +11,7 @@ export const Container = styled.div`
     display: block;
     width: 350px;
     height: 350px;
+    z-index: 2;
   }
 
   .info {
@@ -19,7 +20,7 @@ export const Container = styled.div`
   }
   h2 {
     margin-bottom: 20px;
-    font-size: 30 px;
+    font-size: 35px;
     font-weight: 800;
   }
 
@@ -28,15 +29,15 @@ export const Container = styled.div`
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  @media (max-width: 1080px) {
     display: flex;
     flex-direction: column-reverse;
     height: max-content;
     text-align: center;
-    margin: 0 1rem;
+    margin: 80px 1rem 0;
 
     .image {
       display: block;
