@@ -9,17 +9,11 @@ import {
 } from "./styles";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function Header() {
   const [sidebar, setSidebar] = useState(false);
-  const { asPath } = useRouter();
 
   const showSiderbar = () => setSidebar(!sidebar);
-
-  function activeLink(path) {
-    return asPath === `/${path}` ? "active" : "";
-  }
 
   return (
     <Content>
@@ -38,19 +32,13 @@ export default function Header() {
           <FaTimes />
         </CloseSidebar>
         <Link href="/">
-          <Ancora className={activeLink("")} onClick={showSiderbar}>
-            Home
-          </Ancora>
+          <Ancora onClick={showSiderbar}>Home</Ancora>
         </Link>
         <Link href="projetos">
-          <Ancora className={activeLink("projects")} onClick={showSiderbar}>
-            Projetos
-          </Ancora>
+          <Ancora onClick={showSiderbar}>Projetos</Ancora>
         </Link>
         <Link href="habilidades">
-          <Ancora className={activeLink("habilidades")} onClick={showSiderbar}>
-            Habilidades
-          </Ancora>
+          <Ancora onClick={showSiderbar}>Habilidades</Ancora>
         </Link>
       </NavLinks>
     </Content>
