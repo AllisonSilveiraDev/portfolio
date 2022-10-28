@@ -26,7 +26,7 @@ const Btndiv = styled.div`
 export default function Btn() {
   return (
     <Btndiv>
-      <a href="/files/portfolio.pdf" alt="portfolioPdf" target="_blank">
+      <a href="/files/cv.pdf" alt="cvPDF" target="_blank">
         Download CV
       </a>
     </Btndiv>

@@ -18,11 +18,11 @@ export default function Header() {
   return (
     <Content>
       <ContentTitle>
-        <h1>
+        <a href="https://youtu.be/hlWiI4xVXKY" target="_blank" alt="YTmusic">
           <span>{"{"}</span>
           {"AllisonDev"}
           <span>{"/}"}</span>
-        </h1>
+        </a>
       </ContentTitle>
       <Menu>
         <FaBars onClick={showSiderbar} />

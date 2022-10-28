@@ -10,8 +10,8 @@ export const Desc = styled.div`
     font-weight: 800;
     color: #7ac943;
 
-    @media (max-width: 1080px) {
-      font-size: 25px;
+    @media (max-width: 800px) {
+      font-size: 30px;
     }
   }
 
@@ -19,7 +19,7 @@ export const Desc = styled.div`
     margin: 20px 100px 0 100px;
     font-size: 18px;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 800px) {
       margin: 20px 40px 0 40px;
       font-size: 14px;
     }

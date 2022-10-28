@@ -88,9 +88,10 @@ export const CloseSidebar = styled.div`
 `;
 
 export const ContentTitle = styled.div`
-  h1 {
+  a {
     font-family: "Cascadia";
     font-size: 30px;
+    cursor: pointer;
     span {
       color: #7ac943;
     }
