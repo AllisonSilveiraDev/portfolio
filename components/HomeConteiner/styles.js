@@ -9,8 +9,8 @@ export const Container = styled.div`
 
   .image {
     display: block;
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     z-index: 2;
   }
 
@@ -37,12 +37,12 @@ export const Container = styled.div`
     flex-direction: column-reverse;
     height: max-content;
     text-align: center;
-    margin: 80px 1rem 0;
+    margin: 10px 1rem 0;
 
     .image {
       display: block;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
     }
     .info {
       width: 80%;
