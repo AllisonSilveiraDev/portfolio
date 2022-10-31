@@ -23,7 +23,7 @@ const Btndiv = styled.div`
   }
 `;
 
-export default function Btn() {
+export default function CvBtn() {
   return (
     <Btndiv>
       <a href="/files/cv.pdf" alt="cvPDF" target="_blank">

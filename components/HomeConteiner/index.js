@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "./styles";
-import Btn from "../Btn";
+import CvBtn from "../CvBtn";
 
 export default function Conteudo() {
   return (
@@ -19,7 +19,7 @@ export default function Conteudo() {
           tecnologia, natureza, arte e em me tornar uma pessoa e profissinal
           melhor a cada dia.
         </p>
-        <Btn />
+        <CvBtn />
       </div>
       <div className="image">
         <Image
