@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <Content>
       <ContentTitle>
-        <a href="https://youtu.be/hlWiI4xVXKY" target="_blank" alt="YTmusic">
+        <a href="https://youtu.be/hlWiI4xVXKY" rel="noreferrer" alt="YTmusic">
           <span>{"{"}</span>
           {"AllisonDev"}
           <span>{"/}"}</span>
